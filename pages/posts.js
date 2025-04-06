@@ -38,7 +38,7 @@ export default function Posts() {
     const pollNotifications = async () => {
       try {
         const token = Cookies.get('token');
-        const res = await fetch('http://localhost:8082/notify', {
+        const res = await fetch('http://34.47.206.67:8081/notify', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,
